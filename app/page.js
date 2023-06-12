@@ -3,12 +3,14 @@ import PolandMap from "@/components/PolandMap";
 import heroMain1 from "../img/main_hero_img_1.svg";
 import heroMain2 from "../img/main_hero_img_2.svg";
 import NfzInfoBaner from "@/components/NfzInfoBaner";
+import InfoBanerText from "@/components/InfoBanerText";
 export default function Home() {
   return (
     <>
       <PolandMap />
       <HeroBase
         isTextFirst={true}
+        changePaddingY='pb-24 pt-8'
         titleT={"O nas"}
         description={`Rehabilitacja Medyczna Praktika w Rzeszowie świadczy kompleksowe usługi
                       z zakresu rehabilitacji medycznej w systemie ambulatoryjnym. Mając świadomość nasycenia 
@@ -37,6 +39,7 @@ export default function Home() {
         descriptionLinkText={'Zachęcamy do zapoznania się z naszą'}
         descriptionLink={'pełną ofertą.'}
       />
+      <InfoBanerText/>
     </>
   );
 }

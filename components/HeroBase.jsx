@@ -2,10 +2,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const HeroBase = ({ titleT, titleB, description, description2, image, isTextFirst, descriptionLinkHref, descriptionLinkText, descriptionLink }) => {
+const HeroBase = ({ titleT, titleB, description, description2, image, isTextFirst, descriptionLinkHref, descriptionLinkText, descriptionLink, changePaddingY}) => {
   return (
     <section className="text-gray-600 body-font">
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div className={`container mx-auto flex px-5 ${changePaddingY ? changePaddingY : 'py-24'} md:flex-row flex-col items-center`}>
         {isTextFirst ? (
           <>
             <div className=" lg:flex-grow md:w-1/2 lg:pr-20 md:pr-14 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">

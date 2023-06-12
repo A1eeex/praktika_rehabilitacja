@@ -13,7 +13,7 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        main: ['Moserate'],
+        main: ['Montserrat'],
       },
       colors: {
         'main-color': "#e5097f",

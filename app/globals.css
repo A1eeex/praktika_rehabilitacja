@@ -5,10 +5,14 @@
 @tailwind utilities;
 
 /*header*/
-.header-link{
-  @apply text-white hover:text-main-color p-1 text-base uppercase transition-all duration-300 ease-linear ;
+@layer components {
+  .header-link{
+    @apply text-white hover:text-main-color p-1 text-base uppercase transition-all duration-300 ease-linear ;
+  }
 }
+
 /*style for map*/
 .map_poland a path:hover {
   fill: #e5097f;
 }
+
