@@ -9,6 +9,9 @@
   .header-link{
     @apply text-white hover:text-main-color p-1 text-base uppercase transition-all duration-300 ease-linear ;
   }
+  .link_hover{
+    @apply  hover:text-main-color transition-all duration-300 ease-linear ;
+  }
 }
 
 /*style for map*/
