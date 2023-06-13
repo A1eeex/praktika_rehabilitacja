@@ -4,18 +4,29 @@
 @tailwind components;
 @tailwind utilities;
 
-/*header*/
+
 @layer components {
+  /*header*/
   .header-link{
     @apply text-white hover:text-main-color p-1 text-base uppercase transition-all duration-300 ease-linear ;
   }
+  /*Links*/
   .link_hover{
     @apply  hover:text-main-color transition-all duration-300 ease-linear ;
   }
+
+
 }
 
 /*style for map*/
 .map_poland a path:hover {
   fill: #e5097f;
+}
+/*Button*/
+.button_solid {
+  @apply flex justify-center items-center w-48 h-12 text-white uppercase font-bold bg-main-color rounded-lg hover:bg-opacity-80 transition-all duration-300 ease-linear;
+}
+.button_transparent {
+  @apply flex justify-center items-center w-48 h-12 border border-solid border-main-color  text-main-color uppercase font-bold bg-transparent rounded-lg hover:bg-main-color hover:text-white transition-all duration-300 ease-linear;
 }
 

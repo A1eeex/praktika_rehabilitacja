@@ -1,12 +1,12 @@
 import HeaderImg from "@/components/HeaderImg";
 import NfzInfoBaner from "@/components/NfzInfoBaner";
 
-const PriceListPage = () => {
+const OfferPage = () => {
     return (
         <>
         <HeaderImg
-          pageTitlePage={"Cennik "}
-          pageTitlePage2={"usług rehabilitacyjnych"}
+          pageTitlePage={"Oferta "}
+          pageTitlePage2={"usług "}
           pageTitlePageMainColor={true}
         />
         pricelistpage
@@ -15,4 +15,4 @@ const PriceListPage = () => {
       );
 }
  
-export default PriceListPage;
+export default OfferPage;
