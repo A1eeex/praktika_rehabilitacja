@@ -16,7 +16,7 @@ export default function Home() {
         isTextFirst={true}
         changePaddingY='pb-24 pt-8'
         titleT={"O nas"}
-        description={`Rehabilitacja Medyczna Praktika w Rzeszowie świadczy kompleksowe usługi
+        description={`<span class="font-bold">Rehabilitacja Medyczna</span> <span class="font-bold text-main-color">Praktika </span> <span class="font-bold">w Rzeszowie</span> świadczy kompleksowe usługi
                       z zakresu rehabilitacji medycznej w systemie ambulatoryjnym. Mając świadomość nasycenia 
                       lokalnego rynku rehabilitacji, wyposażyliśy ośrodek w najnowoczesniejszy sprzęt, którego 
                       nie posiada większość gabinetów w naszym mieście.

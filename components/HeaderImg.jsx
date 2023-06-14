@@ -14,7 +14,7 @@ const HeaderImg = ({
   const pathname = usePathname();
   return (
     <div
-      className={`${isMainPage ? "h-screen" : "h-64"}  w-full relative z-10`}
+      className={`${isMainPage ? "h-screen min-h-[550px]" : "h-64"}  w-full relative z-10`}
     >
       {pathname === "/" ? (
         <>
@@ -57,8 +57,9 @@ const HeaderImg = ({
           <div className="w-full text-center absolute bottom-0 z-20">
             <h1
               className={`${
-                pageTitlePageMainColor ? "text-main-color" : "text-white"
-              } font-bold py-9 text-5xl`}
+                pageTitlePageMainColor ? "text-main-color" : "text-white"}
+                text-3xl font-bold py-9 lg:text-5xl 
+              `}
             >
               {pageTitlePage}
               <span

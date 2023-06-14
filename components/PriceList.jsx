@@ -1,0 +1,189 @@
+"use client";
+import React, { useEffect, useState } from 'react';
+import { Input , Typography } from "@material-tailwind/react";
+
+const TABLE_HEAD = ["Usługa", "Cena"];
+const TABLE_ROWS = [
+  {
+    service: "Ćwiczenia czynne",
+    price: "12 zł",
+  },
+  {
+    service: "Ćwiczenia czynno – bierne",
+    price: "14 zł",
+  },
+  {
+    service: "Ćwiczenia czynne w odciążeniu (podwieszki)",
+    price: "8 zł",
+  },
+  {
+    service: "Ćwiczenia izometryczne",
+    price: "12 zł",
+  },
+  {
+    service: "Ćwiczenia metodą McKenzie – pierwsza wizyta",
+    price: "80 zł",
+  },
+  {
+    service: "Ćwiczenia metodą McKenzie – każda kolejna wizyta",
+    price: "40 zł",
+  },
+  {
+    service: "Ćwiczenia specjalistyczne/indywidualna praca z pacjentem (PNF, teapia manualna, IBITA Bobath)",
+    price: "40 zł",
+  },
+  {
+    service: "Diadynamik",
+    price: "8 zł",
+  },
+  {
+    service: "Drenaż limfatyczny (jedna lub dwie kończyny)",
+    price: "20/40 zł",
+  },
+  {
+    service: "Elektrofonoforeza",
+    price: "14 zł",
+  },
+  {
+    service: "Elektrostymulacja",
+    price: "10 zł",
+  },
+  {
+    service: "Fonoforeza",
+    price: "8 zł",
+  },
+  {
+    service: "Galwanizacja",
+    price: "9 zł",
+  },
+  {
+    service: "Instruktaż ćwiczeń do samodzielnego wykonywania",
+    price: "12 zł",
+  },
+  {
+    service: "Interdyn",
+    price: "9 zł",
+  },
+  {
+    service: "Jonoforeza",
+    price: "9 zł",
+  },
+  {
+    service: "Kinesiology Taping",
+    price: "od 20 zł",
+  },
+  {
+    service: "Krioterapia",
+    price: "12 zł",
+  },
+  {
+    service: "Laseroterapia",
+    price: "8 zł",
+  },
+  {
+    service: "Magnetronik",
+    price: "8 zł",
+  },
+  {
+    service: "Masaż ręczny całkowity kręgosłupa",
+    price: "55 zł",
+  },
+  {
+    service: "Masaż ręczny częściowy kręgosłupa",
+    price: "35 zł",
+  },
+  {
+    service: "Masaż wirowy kończyn dolnych",
+    price: "18 zł",
+  },
+  {
+    service: "Masaż wirowy kończyn górnych",
+    price: "15 zł",
+  },
+  {
+    service: "Metoda Huschmidta",
+    price: "10 zł",
+  },
+  {
+    service: "Prądy Kotz'a, Träberta, Tens",
+    price: "8 zł",
+  },
+  {
+    service: "Sollux",
+    price: "6 zł",
+  },
+  {
+    service: "Tonoliza",
+    price: "10 zł",
+  },
+  {
+    service: "Ultradźwięki",
+    price: "9 zł",
+  },
+];
+
+const PriceList = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleInputChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const filteredRows = TABLE_ROWS.filter((row) =>
+    row.service.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+  console.log(filteredRows)
+    return (
+        <div className="container m-auto overflow-x-auto h-full w-full py-12 bg-body-bg-color">
+          
+          <div className="flex flex-col w-72  my-12 m-auto">
+            <Input 
+              color='red' 
+              variant="standard"
+              label="Sukaj" 
+              onChange={handleInputChange}
+            />
+          </div>
+            <table className=" w-11/12 lg:w-4/5 m-auto table-auto">
+              <thead>
+                  <tr>
+                    {TABLE_HEAD.map((head, index) => (
+                        
+                        <th key={head} className={`${index ===0 ?"rounded-tl-md text-left" : index ===1 ? "rounded-tr-md text-right": " "} border-b border-blue-gray-100 bg-blue-gray-50 p-4`}>
+                        <Typography
+                          variant="small"  
+                          className="font-normal leading-none"
+                        >
+                            {head}
+                        </Typography>
+                        </th>
+                    ))}
+                  </tr>
+              </thead>
+              
+              {filteredRows.length ===0 ? 
+                (<div>empty</div>)
+                :
+                <tbody>
+                  {filteredRows.map(({ service, price, }, index) => (
+                  <tr key={service} className={`even:bg-blue-gray-50/50 `}>
+                      <td className="p-4 text-left">
+                        <Typography variant="small" className="font-normal">
+                          {service}
+                        </Typography>
+                      </td>
+                      <td className="p-4 text-right">
+                        <Typography variant="small" className="font-normal">
+                          {price}
+                        </Typography>
+                      </td>          
+                  </tr>
+                  ))}
+              </tbody>
+              }
+            </table>
+      </div>
+    );
+};
+
+export default PriceList;

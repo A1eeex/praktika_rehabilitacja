@@ -17,7 +17,7 @@ import logo from "../img/logo-praktika.svg"
       const handleScroll = () => {
         const headerHeight = document.querySelector(`#${MY_HEADER_WRAP}`).offsetHeight;
         const scrollPosition = window.scrollY || window.pageYOffset;
-        setScrolled(scrollPosition>(headerHeight * 0.5));
+        setScrolled(scrollPosition>(headerHeight * 0.3));
       };
 
       window.addEventListener('scroll', handleScroll);

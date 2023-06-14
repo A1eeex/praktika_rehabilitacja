@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.body_style {
+  @apply text-body-bg-color  ;
+}
 
 @layer components {
   /*header*/

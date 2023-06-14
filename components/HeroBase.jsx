@@ -22,10 +22,14 @@ const HeroBase = ({ titleT, titleB, description, description2, image, isTextFirs
                   )
               }              
               <div className="relative pl-10 pb-10">
-                <p className="mb-4 leading-relaxed ">{description}</p>
+                {/* <p className="mb-4 leading-relaxed">{description}</p> */}
+                <p className="mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: description }} />
+
+
+
                 {description2 ? 
                   (
-                    <p className="mb-0 leading-relaxed ">{description}</p>
+                    <p className="mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: description2 }} />
                   ) : 
                   (
                     " "
@@ -76,10 +80,10 @@ const HeroBase = ({ titleT, titleB, description, description2, image, isTextFirs
                 )
               }
               <div className="relative pr-10 pb-10">
-                <p className="mb-4 leading-relaxed ">{description}</p>
+                <p className="mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: description }} />
                 {description2 ? 
                   (
-                    <p className="mb-0 leading-relaxed ">{description}</p>
+                    <p className="mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: description2 }} />
                   ) : 
                   (
                     ""
