@@ -1,6 +1,6 @@
 "use client";
-import React, { useEffect, useState } from 'react';
-import { Input , Typography } from "@material-tailwind/react";
+import React, { useEffect, useState } from "react";
+import { Input, Typography } from "@material-tailwind/react";
 
 const TABLE_HEAD = ["Usługa", "Cena"];
 const TABLE_ROWS = [
@@ -29,7 +29,8 @@ const TABLE_ROWS = [
     price: "40 zł",
   },
   {
-    service: "Ćwiczenia specjalistyczne/indywidualna praca z pacjentem (PNF, teapia manualna, IBITA Bobath)",
+    service:
+      "Ćwiczenia specjalistyczne/indywidualna praca z pacjentem (PNF, teapia manualna, IBITA Bobath)",
     price: "40 zł",
   },
   {
@@ -132,58 +133,64 @@ const PriceList = () => {
   const filteredRows = TABLE_ROWS.filter((row) =>
     row.service.toLowerCase().includes(searchTerm.toLowerCase())
   );
-  console.log(filteredRows)
-    return (
-        <div className="container m-auto overflow-x-auto h-full w-full py-12 bg-body-bg-color">
-          
-          <div className="flex flex-col w-72  my-12 m-auto">
-            <Input 
-              color='red' 
-              variant="standard"
-              label="Sukaj" 
-              onChange={handleInputChange}
-            />
-          </div>
-            <table className=" w-11/12 lg:w-4/5 m-auto table-auto">
-              <thead>
-                  <tr>
-                    {TABLE_HEAD.map((head, index) => (
-                        
-                        <th key={head} className={`${index ===0 ?"rounded-tl-md text-left" : index ===1 ? "rounded-tr-md text-right": " "} border-b border-blue-gray-100 bg-blue-gray-50 p-4`}>
-                        <Typography
-                          variant="small"  
-                          className="font-normal leading-none"
-                        >
-                            {head}
-                        </Typography>
-                        </th>
-                    ))}
-                  </tr>
-              </thead>
-              
-              {filteredRows.length ===0 ? 
-                (<div>empty</div>)
-                :
-                <tbody>
-                  {filteredRows.map(({ service, price, }, index) => (
-                  <tr key={service} className={`even:bg-blue-gray-50/50 `}>
-                      <td className="p-4 text-left">
-                        <Typography variant="small" className="font-normal">
-                          {service}
-                        </Typography>
-                      </td>
-                      <td className="p-4 text-right">
-                        <Typography variant="small" className="font-normal">
-                          {price}
-                        </Typography>
-                      </td>          
-                  </tr>
-                  ))}
-              </tbody>
-              }
-            </table>
+
+  return (
+    <div className="container m-auto overflow-x-auto h-full w-full py-12 bg-body-bg-color">
+      <div className="flex flex-col w-72  my-12 m-auto">
+        <Input
+          color="pink"
+          variant="standard"
+          label="Sukaj"
+          onChange={handleInputChange}
+        />
       </div>
-    );
+      {filteredRows.length === 0 ? (
+        <div className="m-auto flex justify-center items-center">Nie mamy takiej usługi</div>
+      ) : (
+        <table className=" w-11/12 lg:w-4/5 m-auto table-auto">
+          <thead>
+            <tr>
+              {TABLE_HEAD.map((head, index) => (
+                <th
+                  key={head}
+                  className={`${
+                    index === 0
+                      ? "rounded-tl-md text-left"
+                      : index === 1
+                      ? "rounded-tr-md text-right"
+                      : " "
+                  } border-b border-blue-gray-100 bg-blue-gray-50 p-4`}
+                >
+                  <Typography
+                    variant="small"
+                    className="leading-none font-bold"
+                  >
+                    {head}
+                  </Typography>
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {filteredRows.map(({ service, price }, index) => (
+              <tr key={service} className={`even:bg-blue-gray-50/50 `}>
+                <td className="p-4 text-left">
+                  <Typography variant="small" className="font-normal">
+                    {service}
+                  </Typography>
+                </td>
+                <td className="p-4 text-right">
+                  <Typography variant="small" className="font-normal">
+                    {price}
+                  </Typography>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+    </div>
+  );
 };
 
 export default PriceList;
