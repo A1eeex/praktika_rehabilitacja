@@ -25,6 +25,9 @@
 .map_poland a path:hover {
   fill: #e5097f;
 }
+/* .map_poland .test:hover {
+  fill: #b5e509;
+} */
 /*Button*/
 .button_solid {
   @apply flex justify-center items-center w-48 h-12 text-white uppercase font-bold bg-main-color rounded-lg hover:bg-opacity-80 transition-all duration-300 ease-linear;

@@ -1,6 +1,7 @@
 import React from "react";
 import InfoBanerText from "@/components/InfoBanerText";
 import HeaderImg from "@/components/HeaderImg";
+import Contact from "@/components/Contact";
 
 const contactPage = () => {
   return (
@@ -11,7 +12,7 @@ const contactPage = () => {
         pageTitlePageMainColor2={true}
       />
 
-      <h1>Rehabilitacja Medyczna Praktika Malik Spółka Jawna</h1>
+      <Contact/>
       <InfoBanerText />
     </>
   );

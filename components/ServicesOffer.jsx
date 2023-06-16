@@ -40,10 +40,7 @@ const ServicesOffer = ({title}) => {
                     </div>              
                 </div>
             </div>
-            <PhysiotherapistContact
-                fullName={"Katarzyna Rogóż"}
-                position={"mgr fizjoterapii"}
-            />
+           
         </div>
     );
 };
