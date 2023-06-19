@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from "next/link";
-const ContactBox = ({city, hrefAddress, addresStr, addresCode, phone1Href, phone1, phone2, phone2Href, mail, openDays, openHours, iframeMapSrc}) => {
+const ContactBox = ({city, hrefAddress, addresStr, addresCode, phone1, phone2, mail, openDays, openHours, iframeMapSrc}) => {
     return (
         <div className="mt-14">
         <h3 className="text-2xl font-bold mb-6">
@@ -48,14 +48,10 @@ const ContactBox = ({city, hrefAddress, addresStr, addresCode, phone1Href, phone
 
             <div>
               <div className="font-bold mb-1">Telefon</div>
-              <Link className="link_hover" href={`tel:${phone1Href}`}>
-                {phone1}
-              </Link>
+              <a className="link_hover" href={`tel:${phone1.replace(/\s/g, '')}`}>{phone1}</a> 
               {phone2 ? 
               (<>
-                <Link className="link_hover block"href={`tel:${phone2Href}`}>
-                    {phone2}
-                </Link>
+                <a className="link_hover block" href={`tel:${phone2.replace(/\s/g, '')}`}>{phone2}</a> 
               </>)
               :
               ""
@@ -75,13 +71,13 @@ const ContactBox = ({city, hrefAddress, addresStr, addresCode, phone1Href, phone
             </svg>
             <div>
               <div className="font-bold mb-1">E-mail</div>
-              <Link
+              <a
                 className="link_hover "
                 href={`mailto:${mail}`}
               >
                 {" "}
                 {mail}
-              </Link>
+              </a>
             </div>
           </div>
           <div className="flex flex-row w-full px-2 lg:w-[30%]">
@@ -109,9 +105,9 @@ const ContactBox = ({city, hrefAddress, addresStr, addresCode, phone1Href, phone
           width="800"
           height="250"
           style={{ border: "0" }}
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
           className="w-full mt-5"
         />
       </div>

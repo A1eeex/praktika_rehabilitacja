@@ -3,7 +3,19 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import bg_header from "../img/background_header.jpg";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
+const textAnimation = {
+  hidden: {
+    y: -100,
+    opacity: 0,
+  },
+  visible: custom =>({
+    y: 0,
+    opacity: 1,
+    transition: {delay: custom * 0.2}
+ }),
+}
 const HeaderImg = ({
   isMainPage,
   pageTitlePage,
@@ -13,7 +25,9 @@ const HeaderImg = ({
 }) => {
   const pathname = usePathname();
   return (
-    <div
+    <motion.div
+      initial ="hidden"
+      whileInView="visible"
       className={`${isMainPage ? "h-screen min-h-[550px]" : "h-64"}  w-full relative z-10`}
     >
       {pathname === "/" ? (
@@ -24,15 +38,15 @@ const HeaderImg = ({
             alt="background_header"
           />
           <div className="w-full absolute top-[25%] lg:top-[40%] text-center z-20">
-            <h1 className="text-white text-5xl mb-6">
+            <motion.h1 custom={1} variants={textAnimation} className="text-white text-5xl mb-6">
               Rehabilitacja Medyczna{" "}
               <span className="text-main-color">Praktika</span>
-            </h1>
-            <p className="text-2xl text-center text-white mb-14">
+            </motion.h1>
+            <motion.p custom={2} variants={textAnimation} className="text-2xl text-center text-white mb-14">
               Fizykoterapia | Terapia manualna | Kinezyterapia | Masaż leczniczy
               | Rehabilitacja w domu pacjenta
-            </p>
-            <div className="flex flex-col items-center justify-center lg:flex-row gap-7">
+            </motion.p>
+            <motion.div custom={3} variants={textAnimation} className="flex flex-col items-center justify-center lg:flex-row gap-7">
                 <Link
                     href="/offer" 
                     className="button_solid">
@@ -43,7 +57,7 @@ const HeaderImg = ({
                     className="button_transparent">
                     Kontakt
                 </Link>
-            </div>
+            </motion.div>
           </div>
         </>
       ) : (
@@ -73,7 +87,7 @@ const HeaderImg = ({
           </div>
         </>
       )}
-    </div>
+    </motion.div>
   );
 };
 

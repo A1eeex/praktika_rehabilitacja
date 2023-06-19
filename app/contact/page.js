@@ -1,7 +1,7 @@
 import React from "react";
 import InfoBanerText from "@/components/InfoBanerText";
 import HeaderImg from "@/components/HeaderImg";
-import Contact from "@/components/Contact";
+import ContactMain from "@/components/ContactMain";
 
 const contactPage = () => {
   return (
@@ -12,7 +12,7 @@ const contactPage = () => {
         pageTitlePageMainColor2={true}
       />
 
-      <Contact/>
+      <ContactMain/>
       <InfoBanerText />
     </>
   );

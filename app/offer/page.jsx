@@ -11,7 +11,6 @@ import Link from "next/link";
 import DontDelay from "@/components/DontDelay";
 import OlsoServicesOffer from "@/components/OlsoServicesOffer";
 import ServicesOffer from "@/components/ServicesOffer";
-import Test from "@/components/Test";
 const OfferPage = () => {
     return (
         <>
@@ -39,7 +38,6 @@ const OfferPage = () => {
                         `}
             image={heroMain1}
           />
-           <Test/>
           <ServicesOffer
             title={'Już teraz w naszej ofercie:'}
           />

@@ -5,15 +5,11 @@ import heroMain2 from "../img/main_hero_img_2.svg";
 import NfzInfoBaner from "@/components/NfzInfoBaner";
 import InfoBanerText from "@/components/InfoBanerText";
 import HeaderImg from "@/components/HeaderImg";
-import Test from "@/components/Test";
 export default function Home() {
   return (
     <>
-      
       <HeaderImg isMainPage={true}/>
-      
       <PolandMap/>
-     
       <HeroBase
         isTextFirst={true}
         changePaddingY='pb-24 pt-8'

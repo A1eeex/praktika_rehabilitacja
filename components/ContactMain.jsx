@@ -1,8 +1,6 @@
-import Link from "next/link";
-import React from "react";
 import ContactBox from "./atom/ContactBox";
 
-const Contact = () => {
+const ContactMain = () => {
   return (
     <div className="container m-auto my-24 px-4">
         <h1 className="text-5xl text-center">
@@ -14,7 +12,6 @@ const Contact = () => {
             addresStr={`ul. Szopena 25a/1L`}
             addresCode={`35-055 Rzeszów`}
             phone1={'17 307 06 77'}
-            phone1Href={`173070677`}
             mail={`rejestracja@praktika-rehabilitacja.pl`}
             openDays={`Od poniedziałku do piątku`}
             openHours={`8.30 – 19.00`}
@@ -26,9 +23,7 @@ const Contact = () => {
             addresStr={`ul. Oleska 7/204`}
             addresCode={`45-052 Opole`}
             phone1={'782 816 052'}
-            phone1Href={`782816052`}
             phone2={'695 582 511'}
-            phone2Href={`695582511`}
             mail={`rejestracja@praktika-rehabilitacja.pl`}
             openDays={`Poniedziałek - Sobota`}
             openHours={`07.00 – 21.00`}
@@ -40,9 +35,7 @@ const Contact = () => {
             addresStr={`ul. Adama Mickiewicza 6`}
             addresCode={`32-200 Miechów`}
             phone1={'782 816 052'}
-            phone1Href={`782816052`}
             phone2={'695 582 511'}
-            phone2Href={`695582511`}
             mail={`rejestracja@praktika-rehabilitacja.pl`}
             openDays={`Poniedziałek - Sobota`}
             openHours={`07.00 – 21.00`}
@@ -54,9 +47,7 @@ const Contact = () => {
             addresStr={`ul. Karosek 27`}
             addresCode={`32-700 Bochnia`}
             phone1={'782 816 052'}
-            phone1Href={`782816052`}
             phone2={'695 582 511'}
-            phone2Href={`695582511`}
             mail={`rejestracja@praktika-rehabilitacja.pl`}
             openDays={`Poniedziałek - Sobota`}
             openHours={`07.00 – 21.00`}
@@ -66,11 +57,9 @@ const Contact = () => {
             city={`Zespół Rehabilitacji Domowej w Kolnie`}
             hrefAddress={`https://www.google.pl/maps/place/Wojska+Polskiego+46,+18-500+Kolno/@53.4128047,21.9030065,15z/data=!3m1!4b1!4m6!3m5!1s0x471e21281c15a409:0xc4753bf99e183d8d!8m2!3d53.4127933!4d21.9214602!16s%2Fg%2F11pzt9xpmt?entry=ttu`}
             addresStr={`ul. Wojska Polskiego 46`}
-            addresCode={`18-599`}
+            addresCode={`18-500`}
             phone1={'782 816 052'}
-            phone1Href={`782816052`}
             phone2={'695 582 511'}
-            phone2Href={`695582511`}
             mail={`rejestracja@praktika-rehabilitacja.pl`}
             openDays={`Poniedziałek - Sobota`}
             openHours={`07.00 – 21.00`}
@@ -80,4 +69,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactMain;
