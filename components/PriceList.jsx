@@ -6,79 +6,79 @@ const TABLE_HEAD_FIZYKOTERAPIA = ["Usługa", "Cena"];
 const TABLE_ROWS_FIZYKOTERAPIA = [
     {
       service: "Jonoforeza",
-      price: "20 zł",
+      price: "20zł",
     },
     {
       service: "Galwanizacja",
-      price: "20 zł",
+      price: "20zł",
     },
     {
       service: "Interdyn",
-      price: "20 zł",
+      price: "20zł",
     },
     {
       service: "Tens",
-      price: "20 zł",
+      price: "20zł",
     },
     {
       service: "Diadynamik",
-      price: "20 zł",
+      price: "20zł",
     },
     {
       service: "Elektrostymulacja",
-      price: "20 zł",
+      price: "20zł",
     },
     {
       service: "Prądy Traberta",
-      price: "20 zł",
+      price: "20zł",
     },
     {
       service: "Prądy Kotza",
-      price: "20 zł",
+      price: "20zł",
     },
     {
       service: "Magnetronik",
-      price: "20 zł",
+      price: "20zł",
     },
     {
       service: "Sollux",
-      price: "20 zł",
+      price: "20zł",
     },
     {
       service: "Laser punktowy ",
-      price: "20 zł",
+      price: "20zł",
     },
     {
       service: "Laser typu skanerowego",
-      price: "20 zł",
+      price: "20zł",
     },
     {
       service: "Ultradźwięki",
-      price: "20 zł",
+      price: "20zł",
     },
     {
       service: "Fonoforeza",
-      price: "20 zł",
+      price: "20zł",
     },
     {
       service: "Interdyn",
-      price: "20 zł",
+      price: "20zł",
     },
     {
       service: "Jonoforeza",
-      price: "20 zł",
+      price: "20zł",
     },
     {
       service: "Krioterapia miejscowa",
-      price: "20 zł",
+      price: "20zł",
     },
     {
       service: "Fala uderzeniowa",
-      price: "60 zł",
+      price: "60zł",
     },
     {
       service: "Elektrostymulacja indywidualna ",
-      price: "40 zł",
+      price: "40zł",
     },
   ];
 const TABLE_HEAD_MASAZ = ["Usługa", "Czas", "Cena"];
@@ -106,7 +106,7 @@ const TABLE_ROWS_MASAZ = [
     {
       service: "Masaż Sportowy",
       time: "30-60 min", 
-      price: "70zł/130",
+      price: "70zł/130zł",
     },
     {
       service: "Drenaż limfatyczny",
@@ -125,12 +125,12 @@ const TABLE_ROWS_KINEZYTERAPIA = [
     {
       service: "Terapia w obszarze czaszkowo-żuchwowym i czaszkowo-twarzowym",
       time: "30-60 min",                                                   
-      price: "80zł",
+      price: "   80zł",
     },
     {
       service: "Indywidualna praca z pacjentem",
       time: "30-60 min",
-      price: "120 zł",
+      price: "120zł",
     },
     {
       service: "Kinesiology taping jednej okolicy (*cena zależna od wielkości aplikacji (wywiad, badanie, oklejanie))",
@@ -220,7 +220,7 @@ const PriceList = () => {
                             <th
                             key={head+index}
                             className={`${
-                                index === 0 ? "rounded-tl-md text-left" : index === 1 ? "rounded-tr-md text-center" : index === 2 ? "rounded-tr-md text-right" : " "} border-b border-blue-gray-100 bg-blue-gray-50 p-4`}
+                                index === 0 ? "w-3/5 rounded-tl-md text-left" : index === 1 ? "w-1/5 rounded-tr-md text-center" : index === 2 ? "w-1/5 rounded-tr-md text-right" : " "} border-b border-blue-gray-100 bg-blue-gray-50 p-4`}
                             >
                             <Typography
                                 variant="small"
@@ -235,17 +235,17 @@ const PriceList = () => {
                     <tbody>
                         {TABLE_ROWS_MASAZ.map(({ service, time, price }, index) => (
                         <tr key={service} className={`even:bg-blue-gray-50/50 `}>
-                            <td className="p-4 text-left">
+                            <td className="w-3/5 p-4 text-left">
                                 <Typography variant="small" className="font-normal">
                                     {service}
                                 </Typography>
                             </td>
-                            <td className="p-4 text-center">
+                            <td className="w-1/5 p-4 text-center">
                                 <Typography variant="small" className="font-normal">
                                     {time}
                                 </Typography>
                             </td>
-                            <td className="p-4 text-right">
+                            <td className="w-1/5 p-4 text-right">
                                 <Typography variant="small" className="font-normal">
                                     {price}
                                 </Typography>
@@ -264,7 +264,7 @@ const PriceList = () => {
                             <th
                             key={head}
                             className={`${
-                                index === 0 ? "rounded-tl-md text-left" : index === 1 ? "rounded-tr-md text-center" : index === 2 ? "rounded-tr-md text-right" : " "} border-b border-blue-gray-100 bg-blue-gray-50 p-4`}
+                                index === 0 ? "w-3/5 rounded-tl-md text-left" : index === 1 ? "w-1/5 rounded-tr-md text-center" : index === 2 ? "w-1/5 rounded-tr-md text-right" : " "} border-b border-blue-gray-100 bg-blue-gray-50 p-4`}
                             >
                             <Typography
                                 variant="small"
@@ -279,17 +279,17 @@ const PriceList = () => {
                     <tbody>
                         {TABLE_ROWS_KINEZYTERAPIA.map(({ service, time, price }, index) => (
                         <tr key={service} className={`even:bg-blue-gray-50/50 `}>
-                            <td className="p-4 text-left">
+                            <td className="w-3/5 p-4 text-left">
                                 <Typography variant="small" className="font-normal">
                                     {service}
                                 </Typography>
                             </td>
-                            <td className="p-4 text-center">
+                            <td className="w-1/5 p-4 text-center">
                                 <Typography variant="small" className="font-normal">
                                     {time}
                                 </Typography>
                             </td>
-                            <td className="p-4 text-right">
+                            <td className="w-1/5 p-4 text-right">
                                 <Typography variant="small" className="font-normal">
                                     {price}
                                 </Typography>
