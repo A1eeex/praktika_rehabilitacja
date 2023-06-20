@@ -1,5 +1,5 @@
 import HeaderImg from "@/components/HeaderImg";
-import NfzInfoBaner from "@/components/NfzInfoBaner";
+import {NfzInfoBaner} from "@/components/NfzInfoBaner";
 import PriceList from "@/components/PriceList";
 
 const PriceListPage = () => {

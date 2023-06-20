@@ -1,9 +1,12 @@
+/* eslint-disable react/display-name */
+"use client";
 import Image from 'next/image';
 import React from 'react';
-
-const HeroOffer = ({title, description, listOffer, image, isTextFirst}) => {
+import { motion } from "framer-motion";
+import { forwardRef } from "react";
+export const HeroOffer = forwardRef(({title, description, listOffer, image, isTextFirst}, ref) => {
     return (
-        <section className="text-gray-600 body-font mb-12">
+        <section ref={ref} className="text-gray-600 body-font mb-12">
             <div className={`container bg-white mx-auto flex  ${isTextFirst? "flex-col":"flex-col-reverse"} lg:flex-row`} bis_skin_checked="1">
                 {isTextFirst
                     ? 
@@ -66,14 +69,10 @@ const HeroOffer = ({title, description, listOffer, image, isTextFirst}) => {
                         </div>
 
                     </>)
-                }
-
-
-
-                
+                }               
             </div>
         </section>
     );
-};
+});
 
-export default HeroOffer;
+export const MHeroOffer = motion(HeroOffer);

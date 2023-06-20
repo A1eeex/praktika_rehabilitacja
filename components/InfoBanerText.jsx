@@ -1,8 +1,10 @@
-import Image from "next/image";
-import NfzLogo from '../img/nfz_logo.svg'
-const NfzInfoBaner = () => {
+/* eslint-disable react/display-name */
+"use client"
+import { motion } from "framer-motion";
+import { forwardRef } from "react";
+export const InfoBanerText = forwardRef((prop,ref) => {
     return ( 
-        <section className="bg-main-bg-color p-12">
+        <section ref={ref} className="bg-main-bg-color p-12">
             <div className="container mx-auto items-center lg:flex lg:flex-row">                
                 <div className="w-full text-center mt-8 text-white font-bold text-3xl lg:mt-0"> 
                     <h3 className="text-center"> “ <span className="text-main-color">Ruch</span> zastąpi prawie każdy lek, 
@@ -13,6 +15,6 @@ const NfzInfoBaner = () => {
             </div>
         </section> 
     );
-}
+});
  
-export default NfzInfoBaner;
+export const MInfoBanerText = motion(InfoBanerText)

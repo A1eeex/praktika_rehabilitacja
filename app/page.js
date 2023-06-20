@@ -1,13 +1,31 @@
-import HeroBase from "@/components/HeroBase";
+"use client"
+import {HeroBase} from "@/components/HeroBase";
 import PolandMap from "@/components/PolandMap";
 import heroMain1 from "../img/main_hero_img_1.svg";
 import heroMain2 from "../img/main_hero_img_2.svg";
-import NfzInfoBaner from "@/components/NfzInfoBaner";
-import InfoBanerText from "@/components/InfoBanerText";
+import {MInfoBanerText} from "@/components/InfoBanerText";
 import HeaderImg from "@/components/HeaderImg";
+
+import { motion } from "framer-motion";
+import { MNfzInfoBaner } from "@/components/NfzInfoBaner";
+const animationHomeComponent = {
+  hidden: {
+    y: -200,
+    opacity: 0,
+  },
+  visible: custom =>({
+    y: 0,
+    opacity: 1,
+    transition: {delay: custom * 0.2}
+ }),
+}
 export default function Home() {
   return (
-    <>
+    <motion.div
+      initial ="hidden"
+      whileInView="visible"
+      viewport={{amount: 0.9, once: true }}
+    >
       <HeaderImg isMainPage={true}/>
       <PolandMap/>
       <HeroBase
@@ -25,7 +43,13 @@ export default function Home() {
                      `}
         image={heroMain1}
       />
-      <NfzInfoBaner/>
+      <motion.div
+        initial ="hidden"
+        whileInView="visible"
+        viewport={{amount: 0.3, once: true}}
+      >
+        <MNfzInfoBaner variants={animationHomeComponent}/>
+      </motion.div>
       <HeroBase
         isTextFirst={false}
         titleT={"Nasza Oferta"}
@@ -41,7 +65,13 @@ export default function Home() {
         descriptionLinkText={'Zachęcamy do zapoznania się z naszą'}
         descriptionLink={'pełną ofertą.'}
       />
-      <InfoBanerText/>
-    </>
+      <motion.div
+        initial ="hidden"
+        whileInView="visible"
+        viewport={{amount: 0.3, once: true}}
+      >
+        <MInfoBanerText variants={animationHomeComponent}/>
+      </motion.div>
+    </motion.div>
   );
 }

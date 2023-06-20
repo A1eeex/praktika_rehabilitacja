@@ -28,6 +28,7 @@ const HeaderImg = ({
     <motion.div
       initial ="hidden"
       whileInView="visible"
+      viewport={{once: true}}
       className={`${isMainPage ? "h-screen min-h-[550px]" : "h-64"}  w-full relative z-10`}
     >
       {pathname === "/" ? (

@@ -1,5 +1,5 @@
 import React from "react";
-import InfoBanerText from "@/components/InfoBanerText";
+import {InfoBanerText} from "@/components/InfoBanerText";
 import HeaderImg from "@/components/HeaderImg";
 import ContactMain from "@/components/ContactMain";
 

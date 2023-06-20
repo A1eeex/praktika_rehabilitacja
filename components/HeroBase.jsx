@@ -1,10 +1,12 @@
+/* eslint-disable react/display-name */
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-
-const HeroBase = ({ titleT, titleB, description, description2, image, isTextFirst, descriptionLinkHref, descriptionLinkText, descriptionLink, changePaddingY}) => {
+import { motion } from "framer-motion";
+import { forwardRef } from "react";
+export const HeroBase = forwardRef(({ titleT, titleB, description, description2, image, isTextFirst, descriptionLinkHref, descriptionLinkText, descriptionLink, changePaddingY},ref) => {
   return (
-    <section className="text-gray-600 body-font">
+    <section ref={ref} className="text-gray-600 body-font">
       <div className={`container mx-auto flex px-5 ${changePaddingY ? changePaddingY : 'py-24'} md:flex-row flex-col items-center`}>
         {isTextFirst ? (
           <>
@@ -108,5 +110,5 @@ const HeroBase = ({ titleT, titleB, description, description2, image, isTextFirs
       </div>
     </section>
   );
-};
-export default HeroBase;
+});
+export const MHeroBase = motion(HeroBase);

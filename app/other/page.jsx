@@ -11,10 +11,10 @@ const OtherPage = () => {
             <div className="container m-auto p-12">
                 <ul className="list-disc flex flex-col gap-2">
                     <li>
-                        <Link className="link_hover text-3xl" href={`/#`}>Regulamin </Link>
+                        <Link className="link_hover text-3xl" href={`/statute`}>Regulamin </Link>
                     </li>
                     <li>
-                        <Link className="link_hover text-3xl" href={`/privacy_policy`}>Polityka prywatności </Link>
+                        <Link className="link_hover text-3xl" href={`/privacy-policy`}>Polityka prywatności </Link>
                     </li>
                 </ul>
                 
