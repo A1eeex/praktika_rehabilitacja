@@ -13,7 +13,7 @@ const textAnimation = {
   visible: custom =>({
     y: 0,
     opacity: 1,
-    transition: {delay: custom * 0.1, type: "spring",  duration: 0.5}
+    transition: {delay: custom * 0.1, type: "spring",  duration: 0.8}
  }),
 }
 const HeaderImg = ({
@@ -39,10 +39,10 @@ const HeaderImg = ({
             alt="background_header"
           />
           <div className="w-full absolute top-[25%] lg:top-[40%] text-center z-20">
-            <motion.h1 custom={1} variants={textAnimation} className="text-white text-5xl mb-6">
+            <h1 className="text-white text-5xl mb-6">
               Rehabilitacja Medyczna{" "}
               <span className="text-main-color">Praktika</span>
-            </motion.h1>
+            </h1>
             <motion.p custom={2} variants={textAnimation} className="text-2xl text-center text-white mb-14">
               Fizykoterapia | Terapia manualna | Kinezyterapia | Masaż leczniczy
               | Rehabilitacja w domu pacjenta
