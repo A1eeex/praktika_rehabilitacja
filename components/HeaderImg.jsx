@@ -13,7 +13,7 @@ const textAnimation = {
   visible: custom =>({
     y: 0,
     opacity: 1,
-    transition: {delay: custom * 0.2}
+    transition: {delay: custom * 0.1, type: "spring",  duration: 0.5}
  }),
 }
 const HeaderImg = ({
