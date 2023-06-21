@@ -42,7 +42,7 @@ const TheFooter = () => {
             Od poniedziałku do piątku
           </div>
           <div className="text-center">
-            8.30 – 19.00
+            8:30 – 19:00
           </div>
         </div>  
       </div>

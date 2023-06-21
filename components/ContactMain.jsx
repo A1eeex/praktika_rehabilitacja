@@ -14,9 +14,10 @@ const ContactMain = () => {
             phone1={'17 307 06 77'}
             mail={`rejestracja@praktika-rehabilitacja.pl`}
             openDays={`Od poniedziałku do piątku`}
-            openHours={`8.30 – 19.00`}
-            iframeMapSrc={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10251.240029772543!2d21.98873324479061!3d50.03365582017276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cfaf79abe13c7%3A0x13f03622da665730!2sRehabilitacja%20medyczna%20%E2%80%9EPraktika%E2%80%9D!5e0!3m2!1suk!2spl!4v1686900436323!5m2!1suk!2spl`}
+            openHours={`8:30 – 19:00`}
+            iframeMapSrc={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.8104825914725!2d22.00461197733761!3d50.03364691728589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cfafeff7917bb%3A0xc83b43dc05b798ef!2sFryderyka%20Szopena%2025A%2C%2035-055%20Rzesz%C3%B3w!5e0!3m2!1spl!2spl!4v1687331099689!5m2!1spl!2spl`}
         />
+       
         <ContactBox
             city={`Praktika sp. z o.o. w Opolu`}
             hrefAddress={`https://www.google.pl/maps/place/Oleska+7%2F204,+46-020+Opole/@50.6715889,17.9235514,17z/data=!4m5!3m4!1s0x47105307233054ed:0xd099e69cfe8987cc!8m2!3d50.6715855!4d17.9261263?entry=ttu`}
@@ -26,9 +27,10 @@ const ContactMain = () => {
             phone2={'695 582 511'}
             mail={`rejestracja@praktika-rehabilitacja.pl`}
             openDays={`Poniedziałek - Sobota`}
-            openHours={`07.00 – 21.00`}
-            iframeMapSrc={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.6052812558214!2d17.923551375437988!3d50.67158887141822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47105307233054ed%3A0xd099e69cfe8987cc!2sOleska%207%2F204%2C%2046-020%20Opole!5e0!3m2!1suk!2spl!4v1686902763182!5m2!1suk!2spl`}
+            openHours={`07:00 – 21:00`}
+            iframeMapSrc={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.6052812559474!2d17.923551377360347!3d50.671588871415885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47105307233054ed%3A0xd099e69cfe8987cc!2sOleska%207%2F204%2C%2046-020%20Opole!5e0!3m2!1spl!2spl!4v1687331327923!5m2!1spl!2spl`}
         />
+        
         <ContactBox
             city={`Zespół Rehabilitacji Domowej w Miechowie`}
             hrefAddress={`https://www.google.pl/maps/place/Adama+Mickiewicza+6,+32-200+Miech%C3%B3w/@50.355663,20.0241383,17z/data=!3m1!4b1!4m6!3m5!1s0x4717abda0e3bdd1d:0x5917abb0209e1688!8m2!3d50.3556596!4d20.0267132!16s%2Fg%2F11rqv0pyf2?entry=ttu`}
@@ -38,9 +40,10 @@ const ContactMain = () => {
             phone2={'695 582 511'}
             mail={`rejestracja@praktika-rehabilitacja.pl`}
             openDays={`Poniedziałek - Sobota`}
-            openHours={`07.00 – 21.00`}
-            iframeMapSrc={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.5840546580143!2d20.024138277518727!3d50.35566299418281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4717abda0e3bdd1d%3A0x5917abb0209e1688!2sAdama%20Mickiewicza%206%2C%2032-200%20Miech%C3%B3w!5e0!3m2!1suk!2spl!4v1686905078827!5m2!1suk!2spl`}
+            openHours={`07:00 – 21:00`}
+            iframeMapSrc={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20364.66465280692!2d19.989805317764162!3d50.3556811412286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4717abda0e3bdd1d%3A0x5917abb0209e1688!2sAdama%20Mickiewicza%206%2C%2032-200%20Miech%C3%B3w!5e0!3m2!1spl!2spl!4v1687331485416!5m2!1spl!2spl`}
         />
+        
         <ContactBox
             city={`Zespół Rehabilitacji Domowej w Bochni`}
             hrefAddress={`https://www.google.pl/maps/place/Karosek+27,+32-700+Bochnia/@49.975396,20.4206352,17.91z/data=!4m6!3m5!1s0x47163b3a3fe10a1f:0x85744c6b79eb0728!8m2!3d49.9752068!4d20.4221352!16s%2Fg%2F11c23rvlnm?entry=ttu`}
@@ -50,8 +53,8 @@ const ContactMain = () => {
             phone2={'695 582 511'}
             mail={`rejestracja@praktika-rehabilitacja.pl`}
             openDays={`Poniedziałek - Sobota`}
-            openHours={`07.00 – 21.00`}
-            iframeMapSrc={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1364.6278907985172!2d20.42063519386687!3d49.97539595794173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47163b3a3fe10a1f%3A0x85744c6b79eb0728!2sKarosek%2027%2C%2032-700%20Bochnia!5e0!3m2!1suk!2spl!4v1686906354692!5m2!1suk!2spl`}
+            openHours={`07:00 – 21:00`}
+            iframeMapSrc={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.927923655923!2d20.41956027733554!3d49.97521022146711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47163b3a3fe10a1f%3A0x85744c6b79eb0728!2sKarosek%2027%2C%2032-700%20Bochnia!5e0!3m2!1spl!2spl!4v1687331582992!5m2!1spl!2spl`}
         />
         <ContactBox
             city={`Zespół Rehabilitacji Domowej w Kolnie`}
@@ -62,8 +65,8 @@ const ContactMain = () => {
             phone2={'695 582 511'}
             mail={`rejestracja@praktika-rehabilitacja.pl`}
             openDays={`Poniedziałek - Sobota`}
-            openHours={`07.00 – 21.00`}
-            iframeMapSrc={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9512.452121434506!2d21.903006455557186!3d53.41280466757073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471e21281c15a409%3A0xc4753bf99e183d8d!2sWojska%20Polskiego%2046%2C%2018-500%20Kolno!5e0!3m2!1suk!2spl!4v1686906677081!5m2!1suk!2spl`}
+            openHours={`07:00 – 21:00`}
+            iframeMapSrc={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19024.900430374786!2d21.88455236112587!3d53.4128131907145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471e21281c15a409%3A0xc4753bf99e183d8d!2sWojska%20Polskiego%2046%2C%2018-500%20Kolno!5e0!3m2!1spl!2spl!4v1687331744133!5m2!1spl!2spl`}
         />
     </div>
   );

@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-output: 'standalone',
+  // output: "export",
   
-  unoptimized: true,
-  experimental: {
-    images: true,
-  },
+  // unoptimized: true,
+  // experimental: {
+  //   images: true,
+  // },
 };
 
 module.exports = nextConfig;

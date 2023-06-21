@@ -257,7 +257,7 @@ const PriceList = () => {
             </div>
             <div className='container m-auto'>
                 <h2 className='font-bold text-2xl text-main-color m-auto my-4 w-11/12 lg:w-4/5 '>Kinezyterapia</h2>
-                <table className=" w-11/12 lg:w-4/5 m-auto table-auto">
+                <table className=" w-11/12 lg:w-4/5 m-auto table-auto mb-6">
                     <thead>
                         <tr>
                         {TABLE_HEAD_KINEZYTERAPIA.map((head, index) => (

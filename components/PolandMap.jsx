@@ -92,7 +92,7 @@ const PolandMap = () => {
           titleModal={`Województwo podlaskie`}
         >
           <ContactInfo
-            address={`ul. Oleska 7/204, 45-052 Opole`}
+            address={`ul. Wojska Polskiego 46, 18-500`}
             mail={`@rejestracja@praktika-rehabilitacja.pl`}
             phone1={`782 816 052`}
             phone2={`695 582 511`}
@@ -111,7 +111,7 @@ const PolandMap = () => {
             mail={`rejestracja@praktika-rehabilitacja.pl`}
             phone1={`17 307 06 77`}
             openHourseTitle={`Od poniedziałku do piątku`} 
-            openHourseTime={`8:30 – 19.00`}
+            openHourseTime={`8:30 – 19:00`}
           />
         </Modal>
       )}
