@@ -60,7 +60,7 @@ const ContactMain = () => {
             city={`Zespół Rehabilitacji Domowej w Kolnie`}
             hrefAddress={`https://www.google.pl/maps/place/Wojska+Polskiego+46,+18-500+Kolno/@53.4128047,21.9030065,15z/data=!3m1!4b1!4m6!3m5!1s0x471e21281c15a409:0xc4753bf99e183d8d!8m2!3d53.4127933!4d21.9214602!16s%2Fg%2F11pzt9xpmt?entry=ttu`}
             addresStr={`ul. Wojska Polskiego 46`}
-            addresCode={`18-500`}
+            addresCode={`18-500 Kolno`}
             phone1={'782 816 052'}
             phone2={'695 582 511'}
             mail={`rejestracja@praktika-rehabilitacja.pl`}

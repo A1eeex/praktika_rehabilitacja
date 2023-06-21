@@ -92,7 +92,7 @@ const PolandMap = () => {
           titleModal={`Województwo podlaskie`}
         >
           <ContactInfo
-            address={`ul. Wojska Polskiego 46, 18-500`}
+            address={`ul. Wojska Polskiego 46, 18-500 Kolno`}
             mail={`@rejestracja@praktika-rehabilitacja.pl`}
             phone1={`782 816 052`}
             phone2={`695 582 511`}
