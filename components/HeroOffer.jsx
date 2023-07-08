@@ -36,13 +36,13 @@ export const HeroOffer = forwardRef(({title, description, listOffer, image, isTe
                             
                         </div>
                         <div className="relative w-full lg:w-1/3 min-h-[200px] lg:min-h-[350px] border-t-[3px] lg:border-l-[3px] lg:border-t-0 border-solid border-main-color" bis_skin_checked="1">
-                            <Image  className="absolute top-0 left-0 z-0 w-full h-full object-cover" alt="hero" src={image}/>
+                            <img  className="absolute top-0 left-0 z-0 w-full h-full object-cover" alt="hero" src={image}/>
                         </div>
                     </>)
                     : 
                     (<>
                         <div className="relative w-full lg:w-1/3 min-h-[200px] lg:min-h-[350px] border-t-[3px] lg:border-r-[3px] lg:border-t-0  border-solid border-main-color" bis_skin_checked="1">
-                            <Image  className="absolute top-0 left-0 z-0 w-full h-full object-cover" alt="hero" src={image}/>
+                            <img  className="absolute top-0 left-0 z-0 w-full h-full object-cover" alt="hero" src={image}/>
                         </div>
                         <div className="p-12 w-full lg:w-2/3 flex flex-col justify-center items-center" bis_skin_checked="1">
                             <h3 className='text-center text-3xl mb-6'>{title}</h3>

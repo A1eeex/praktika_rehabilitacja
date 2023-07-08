@@ -10,7 +10,7 @@ const ServicesOffer = ({title}) => {
                 <div className={`flex flex-col lg:flex-row`}>
                     <div className='w-full lg:w-1/2 px-6 flex flex-col gap-5'>
                         <InfoCard
-                            description={`Fizjoterapia ureginekologiczna kobiet i urologiczna mężczyzn`}
+                            description={`Fizjoterapia uroginekologiczna kobiet i urologiczna mężczyzn`}
                             listDescription={`
                                                 <li>Nietrzymanie moczu i zaburzenia dolnych dróg moczowych</li>
                                                 <li>Bóle menstruacyjne</li>

@@ -16,7 +16,7 @@ const OlsoServicesOffer = ({title}) => {
                     <InfoCard description={'Terapia bólu kręgosłupa'}/>  
                     <InfoCard description={'PNF'}/>  
                     <InfoCard description={'Kinesiotaping'}/>  
-                    <InfoCard description={'Fizykoterapia (laser, ultradźwięki, lampa sollux, pole magnetyczne, prądy Kotza, TENS, Interdyn, jonoforeza, didynamik)'}/>
+                    <InfoCard description={'Fizykoterapia (laser, ultradźwięki, lampa sollux, pole magnetyczne, prądy Kotza, TENS, Interdyn, jonoforeza, diadynamik)'}/>
                 </div>
   
             </div>

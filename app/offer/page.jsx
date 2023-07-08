@@ -2,12 +2,12 @@
 import HeaderImg from "@/components/HeaderImg";
 import {MHeroBase} from "@/components/HeroBase";
 import {NfzInfoBaner} from "@/components/NfzInfoBaner";
-import {MHeroOffer, HeroOffer} from "@/components/HeroOffer";
+import {MHeroOffer} from "@/components/HeroOffer";
 import heroMain1 from "../../img/offer_hero_img.svg";
-import heroOfferImg1 from "../../img/offer/hero-offer-1.jpg";
-import heroOfferImg2 from "../../img/offer/hero-offer-2.jpg";
-import heroOfferImg3 from "../../img/offer/hero-offer-3.jpg";
-import heroOfferImg4 from "../../img/offer/hero-offer-4.jpg";
+// import heroOfferImg1 from "../../img/offer/hero-offer-1.jpg";
+// import heroOfferImg2 from "../../img/offer/hero-offer-2.jpg";
+// import heroOfferImg3 from "../../img/offer/hero-offer-3.jpg";
+// import heroOfferImg4 from "../../img/offer/hero-offer-4.jpg";
 import DontDelay from "@/components/DontDelay";
 import OlsoServicesOffer from "@/components/OlsoServicesOffer";
 import ServicesOffer from "@/components/ServicesOffer";
@@ -103,7 +103,7 @@ const OfferPage = () => {
                           <li>Po zabiegach operacyjnych korekcyjnych</li>
                           <li>Po zdjęciu gipsu</li>
                         `}
-              image={heroOfferImg1}
+              image={'/hero-offer-1.jpg'}
             />
           </motion.div>
           <motion.div
@@ -125,7 +125,7 @@ const OfferPage = () => {
                             niełatwo pogodzą się ze spadkiem formy, kilka tygodni bezczynności może być nie do 
                             przyjęcia.
                           `}
-              image={heroOfferImg2}
+              image={'hero-offer-2.jpg'}
             />
           </motion.div>
           <motion.div
@@ -144,7 +144,7 @@ const OfferPage = () => {
                             nie jest już zarezerwowana tylko dla piłkarzy najlepszych europejskich klubów. Specjalistyczne 
                             kliniki medycyny sportowej i rehabilitacji znajdują się w całym kraju.
                           `}
-              image={heroOfferImg3}
+              image={'hero-offer-3.jpg'}
             />
           </motion.div>
           <motion.div
@@ -164,7 +164,7 @@ const OfferPage = () => {
                             wymaga, lekarze mogą również zaproponować leczenie operacyjne. Ważne jest, aby zasięgnąć opinii 
                             na temat danej kliniki, zanim poddamy się leczeniu.
                           `}
-              image={heroOfferImg4}
+              image={'hero-offer-4.jpg'}
             />
           </motion.div>
           <NfzInfoBaner/>

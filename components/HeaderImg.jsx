@@ -1,7 +1,5 @@
 "use client";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
-import bg_header from "../img/background_header.jpg";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -33,9 +31,9 @@ const HeaderImg = ({
     >
       {pathname === "/" ? (
         <>
-          <Image
+          <img
             className="absolute top-0 left-0 z-0 w-full h-full object-cover"
-            src={bg_header}
+            src={'/background_header.jpg'}
             alt="background_header"
           />
           <div className="w-full absolute top-[25%] lg:top-[40%] text-center z-20">
@@ -63,9 +61,9 @@ const HeaderImg = ({
         </>
       ) : (
         <>
-          <Image
+          <img
             className="absolute top-0 left-0 z-0 w-full h-full object-cover"
-            src={bg_header}
+            src={'/background_header.jpg'}
             alt="background_header"
           />
 
