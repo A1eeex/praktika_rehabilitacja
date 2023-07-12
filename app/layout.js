@@ -21,6 +21,8 @@ export default function RootLayout({ children }) {
           </main>      
         
         <TheFooter className="mt-auto" />
+          {/* cookie */}
+          <script type="text/javascript" data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/3732be521186b.js" data-cmp-host="c.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="0"></script>
         </body>
     </html>
   )
