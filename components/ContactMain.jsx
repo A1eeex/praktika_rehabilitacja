@@ -68,6 +68,30 @@ const ContactMain = () => {
             openHours={`07:00 – 21:00`}
             iframeMapSrc={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19024.900430374786!2d21.88455236112587!3d53.4128131907145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471e21281c15a409%3A0xc4753bf99e183d8d!2sWojska%20Polskiego%2046%2C%2018-500%20Kolno!5e0!3m2!1spl!2spl!4v1687331744133!5m2!1spl!2spl`}
         />
+        <ContactBox
+            city={`Zespół Rehabilitacji Domowej w Łęcznej`}
+            hrefAddress={`https://www.google.com/maps/place/Wac%C5%82awa+Jawoszka+2%2F1,+21-010+%C5%81%C4%99czna/@51.294725,22.8896238,16.22z/data=!4m5!3m4!1s0x4723b2a0d94deba9:0x9036b69f6ba3e687!8m2!3d51.2960585!4d22.8883375?entry=ttu`}
+            addresStr={`ul. Jawoszka 2/1`}
+            addresCode={`21-010 Łęczna`}
+            phone1={'782 816 052'}
+            phone2={'695 582 511'}
+            mail={`rejestracja@praktika-rehabilitacja.pl`}
+            openDays={`Poniedziałek - Sobota`}
+            openHours={`07:00 – 21:00`}
+            iframeMapSrc={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2494.8188023268467!2d22.8883375!3d51.296058499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4723b2a0d94deba9%3A0x9036b69f6ba3e687!2zV2FjxYJhd2EgSmF3b3N6a2EgMi8xLCAyMS0wMTAgxYHEmWN6bmE!5e0!3m2!1spl!2spl!4v1700664794471!5m2!1spl!2spl`}
+        />
+        <ContactBox
+            city={`Zespół Rehabilitacji Domowej w Parczewie`}
+            hrefAddress={`https://www.google.com/maps/place/Nowa+13,+21-200+Parczew/@51.6406477,22.9007135,17z/data=!3m1!4b1!4m6!3m5!1s0x4722301c0d638ee5:0x6526d3d553269cfc!8m2!3d51.6406477!4d22.9007135!16s%2Fg%2F11c88qlq2g?entry=ttu`}
+            addresStr={`ul. Nowa 13`}
+            addresCode={`21-200 Parczew`}
+            phone1={'782 816 052'}
+            phone2={'695 582 511'}
+            mail={`rejestracja@praktika-rehabilitacja.pl`}
+            openDays={`Poniedziałek - Sobota`}
+            openHours={`07:00 – 21:00`}
+            iframeMapSrc={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2476.0479087127233!2d22.900713500000002!3d51.6406477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4722301c0d638ee5%3A0x6526d3d553269cfc!2sNowa%2013%2C%2021-200%20Parczew!5e0!3m2!1spl!2spl!4v1700665680763!5m2!1spl!2spl`}
+        />
     </div>
   );
 };

@@ -5,7 +5,7 @@ const page = () => {
   return (
     <>
       <HeaderImg
-        pageTitlePage={"Polityka prywatności"}
+        pageTitlePage={"Regulamin"}
         pageTitlePageMainColor={true}
       />
 
