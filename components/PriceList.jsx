@@ -5,118 +5,118 @@ import { Typography } from "@material-tailwind/react";
 const TABLE_HEAD_FIZYKOTERAPIA = ["Usługa", "Cena"];
 const TABLE_ROWS_FIZYKOTERAPIA = [
     {
-      service: "Jonoforeza",
-      price: "20zł",
+      service: "Zabiegi fizykalne",
+      price: " od 25zł",
     },
-    {
-      service: "Galwanizacja",
-      price: "20zł",
-    },
-    {
-      service: "Interdyn",
-      price: "20zł",
-    },
-    {
-      service: "Tens",
-      price: "20zł",
-    },
-    {
-      service: "Diadynamik",
-      price: "20zł",
-    },
-    {
-      service: "Elektrostymulacja",
-      price: "20zł",
-    },
-    {
-      service: "Prądy Traberta",
-      price: "20zł",
-    },
-    {
-      service: "Prądy Kotza",
-      price: "20zł",
-    },
-    {
-      service: "Magnetronik",
-      price: "20zł",
-    },
-    {
-      service: "Sollux",
-      price: "20zł",
-    },
-    {
-      service: "Laser punktowy ",
-      price: "20zł",
-    },
-    {
-      service: "Laser typu skanerowego",
-      price: "20zł",
-    },
-    {
-      service: "Ultradźwięki",
-      price: "20zł",
-    },
-    {
-      service: "Fonoforeza",
-      price: "20zł",
-    },
-    {
-      service: "Interdyn",
-      price: "20zł",
-    },
-    {
-      service: "Jonoforeza",
-      price: "20zł",
-    },
-    {
-      service: "Krioterapia miejscowa",
-      price: "20zł",
-    },
+    // {
+    //   service: "Galwanizacja",
+    //   price: "20zł",
+    // },
+    // {
+    //   service: "Interdyn",
+    //   price: "20zł",
+    // },
+    // {
+    //   service: "Tens",
+    //   price: "20zł",
+    // },
+    // {
+    //   service: "Diadynamik",
+    //   price: "20zł",
+    // },
+    // {
+    //   service: "Elektrostymulacja",
+    //   price: "20zł",
+    // },
+    // {
+    //   service: "Prądy Traberta",
+    //   price: "20zł",
+    // },
+    // {
+    //   service: "Prądy Kotza",
+    //   price: "20zł",
+    // },
+    // {
+    //   service: "Magnetronik",
+    //   price: "20zł",
+    // },
+    // {
+    //   service: "Sollux",
+    //   price: "20zł",
+    // },
+    // {
+    //   service: "Laser punktowy ",
+    //   price: "20zł",
+    // },
+    // {
+    //   service: "Laser typu skanerowego",
+    //   price: "20zł",
+    // },
+    // {
+    //   service: "Ultradźwięki",
+    //   price: "20zł",
+    // },
+    // {
+    //   service: "Fonoforeza",
+    //   price: "20zł",
+    // },
+    // {
+    //   service: "Interdyn",
+    //   price: "20zł",
+    // },
+    // {
+    //   service: "Jonoforeza",
+    //   price: "20zł",
+    // },
+    // {
+    //   service: "Krioterapia miejscowa",
+    //   price: "20zł",
+    // },
     {
       service: "Fala uderzeniowa",
-      price: "60zł",
+      price: "70zł",
     },
-    {
-      service: "Elektrostymulacja indywidualna ",
-      price: "40zł",
-    },
+    // {
+    //   service: "Elektrostymulacja indywidualna ",
+    //   price: "40zł",
+    // },
   ];
 const TABLE_HEAD_MASAZ = ["Usługa", "Czas", "Cena"];
 const TABLE_ROWS_MASAZ = [
     {
       service: "Masaż tkanek głębokich",
       time: "30-60 min",                                                   
-      price: "70zł/130zł",
+      price: "80zł/150zł",
     },
     {
       service: "Masaż leczniczy całościowy kręgosłupa",
       time: "30-60 min",
-      price: "70zł/130zł",
+      price: "80zł/150zł",
     },
     {
       service: "Masaż leczniczy",
       time: "30-60 min", 
-      price: "70zł/130zł",
+      price: "80zł/150zł",
     },
     {
       service: "Masaż bańką chińską",
       time: "30-60 min",
-      price: "70zł",
+      price: "80zł",
     },
     {
       service: "Masaż Sportowy",
       time: "30-60 min", 
-      price: "70zł/130zł",
+      price: "80zł/150zł",
     },
     {
       service: "Drenaż limfatyczny",
       time: "30-60 min", 
-      price: "70zł/130zł",
+      price: "80zł/150zł",
     },
     {
       service: "Terapia Punktów spustowych",
       time: "30-60 min",
-      price: "70zł",
+      price: "80zł",
     },
 
   ];
@@ -125,12 +125,12 @@ const TABLE_ROWS_KINEZYTERAPIA = [
     {
       service: "Terapia w obszarze czaszkowo-żuchwowym i czaszkowo-twarzowym",
       time: "30-60 min",                                                   
-      price: "   80zł",
+      price: "   100zł",
     },
     {
       service: "Indywidualna praca z pacjentem",
       time: "30-60 min",
-      price: "120zł",
+      price: "150zł",
     },
     {
       service: "Kinesiology taping jednej okolicy (*cena zależna od wielkości aplikacji (wywiad, badanie, oklejanie))",
@@ -140,27 +140,27 @@ const TABLE_ROWS_KINEZYTERAPIA = [
     {
       service: "PIR – poizometryczna relaksacja mięśni",
       time: "30-60 min",
-      price: "75zł",
+      price: "80zł",
     },
     {
       service: "Terapia manualna blizny",
       time: "30-60 min", 
-      price: "70zł",
+      price: "80zł",
     },
     {
       service: "Instruktaż ćwiczeń",
       time: "30-60 min", 
-      price: "130zł",
+      price: "150zł",
     },
     {
       service: "Profilaktyka kręgosłupa",
       time: "30-60 min",
-      price: "130zł",
+      price: "150zł",
     },
     {
       service: "Konsultacja fizjoterapeuty",
       time: "30-60 min",
-      price: "130zł",
+      price: "150zł",
     },
 
   ];
