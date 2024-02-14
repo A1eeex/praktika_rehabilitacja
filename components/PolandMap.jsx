@@ -16,8 +16,8 @@ const PolandMap = () => {
   </svg>`
 
   return (
-    <div className="container w-full mx-auto">
-      <h1 className='my-6 pt-10 w-full mx-auto text-3xl font-bold text-center text-main-color'>Sprawdź gdzie jesteśmy</h1>
+    <div id='map_main' className="container w-full mx-auto">
+      <h1 className='mb-6 pt-10 w-full mx-auto text-3xl font-bold text-center text-main-color'>Sprawdź gdzie jesteśmy</h1>
       <div className='w-4/6 mx-auto container'>
         <svg className='map_poland mx-auto w-full h-auto' baseProfile="tiny" fill="#7c7c7c" height="948" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" version="1.2" viewBox="0 0 1000 948" width="1000" xmlns="http://www.w3.org/2000/svg">
 

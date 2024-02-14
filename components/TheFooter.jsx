@@ -91,9 +91,9 @@ const TheFooter = () => {
       <div className="w-full text-center mb-2 lg:w-1/2 lg:text-start lg:mb-0">
           &copy;Rehabilitacja Medyczna <span className="text-main-color font-bold">Praktika</span>  | Wszelkie prawa zastrzeżone 
         </div>
-        <div className="w-full text-center lg:w-1/2 lg:text-end">
+        {/* <div className="w-full text-center lg:w-1/2 lg:text-end">
           <span className="text-main-color font-bold">Realizacja: </span>Oleksandr Petrovskyi
-        </div>
+        </div> */}
 
       </div>
     </div>
